@@ -14,5 +14,11 @@ class Image(models.Model):
 class Location(models.Model):
     location = models.CharField(max_length=30)
 
-    ef __str__(self):
+    def __str__(self):
         return self.location
+
+class Category(models.Model):
+    category = models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.category
