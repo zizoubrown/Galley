@@ -17,8 +17,8 @@ class Image(models.Model):
     #image = models.ImageField()
     image_name = models.CharField(max_length=30)
     image_description = models.CharField(max_length=30)
-    image_location = models.ForeignKey(Location, on_delete=models.CASCADE)
-    image_category = models.ForeignKey(Location, on_delete=models.CASCADE)
+    location = models.ForeignKey(Location, on_delete=models.CASCADE)
+    category = models.ForeignKey(Location, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.image_name
