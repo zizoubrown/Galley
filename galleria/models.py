@@ -31,5 +31,5 @@ class Image(models.Model):
 
     @classmethod
     def search_by_category(cls,search_term):
-        gallery = cls.objects.filter(category_icontains=search_term)
-        return gallery
+        search_result = cls.objects.filter(category_icontains=search_term)
+        return search_result
