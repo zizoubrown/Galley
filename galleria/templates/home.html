@@ -9,7 +9,10 @@
             {% for image in images %}
                 <div class="col-sm-4 my-4 animate__animated animate__fadeIn animate__delay-1s animate__animated animate__fadeIn animate__fadeInUp">
                     <div class="card" style="width: 25rem;" id="transparent">
-                        <img src="{{image.image.url}}" class="card-img-top" alt="Image">
+                        <a href="{{image.image.url}}" id="pop">
+                            <img src="{{image.image.url}}" class="card-img-top" alt="Image" style="width: 400px; height: 264px;">
+                            Click to Enlarge
+                        </a>  
                         <div class="card-body">
                             <h5 class="card-title ml-2">{{ image.image_name }}</h5>
                             <!-- Button trigger modal -->
