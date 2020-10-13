@@ -1,3 +1,4 @@
-pipenv/
+pipfile
+pipfile.lock
 db.sqlite
 requirements.txt
