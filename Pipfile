@@ -4,11 +4,23 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
-django-bootstrap4 = "*"
-psycopg2 = "*"
-pillow = "*"
+django = "==3.1.2"
+django-bootstrap4 = "==2.3.0"
+psycopg2 = "==2.8.6"
+Pillow = "==7.2.0"
 django-bootstrap-modal-forms = "*"
+asgiref = "==3.2.10"
+beautifulsoup4 = "==4.9.3"
+bootstrap4 = "==0.1.0"
+pytz = "==2020.1"
+soupsieve = "==2.0.1"
+sqlparse = "==0.4.1"
+whitenoise = "*"
+python-decouple = "*"
+gunicorn = "*"
+dj-database-url = "*"
+config = "*"
+django-heroku = "*"
 
 [dev-packages]
 
