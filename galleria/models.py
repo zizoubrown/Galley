@@ -24,7 +24,7 @@ class Image(models.Model):
     image_name = models.CharField(max_length=30)
     image_description = models.CharField(max_length=200)
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
-    category = models.ManyToManyField(Category)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.image_name

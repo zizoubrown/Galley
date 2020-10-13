@@ -8,6 +8,7 @@ django = "*"
 django-bootstrap4 = "*"
 psycopg2 = "*"
 pillow = "*"
+django-bootstrap-modal-forms = "*"
 
 [dev-packages]
 
